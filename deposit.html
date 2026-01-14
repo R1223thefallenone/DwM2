@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet - Depositar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/ccs/deposit.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Depositar</h2>
+    <div class="alert alert-info text-center mb-3">
+     Saldo actual: <strong id="currentBalance"></strong>
+  </div>
+      <form id="depositForm">
+      <div class="form-group mb-3">
+      <label for="depositAmount">Monto a depositar:</label>
+      <input type="number" class="form-control" id="depositAmount" placeholder="Ingresa el monto" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Realizar depósito</button>
+      </form>
+      <div id="message" class="mt-3"></div>
+      <a href="menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
+  </div>
+</body>
+<!--Scrip bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--Jquery script-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--script js-->
+<script src="assets/js/deposit.js"></script>
+</html>

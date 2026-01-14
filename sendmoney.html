@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet - Enviar Dinero</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/ccs/sendmoney.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Enviar Dinero</h2>
+<!-- Buscar / agregar contacto -->
+<form id="addContactForm">
+  <div class="form-group mb-3">
+    <label for="searchContact">Buscar en la agenda de transferencias:</label>
+    <input type="text" class="form-control" id="searchContact" placeholder="Busca un contacto">
+  </div>
+  <button id="btnToggleForm" class="btn btn-outline-primary mb-3">
+    Agregar nuevo contacto
+  </button>
+</form>
+
+<h3 class="mt-4">Contactos</h3>
+<ul id="contactList" class="list-group">
+  <li class="list-group-item">
+    <input type="radio" name="contact" value="Juan Delgado">
+    <strong>Juan Delgado</strong><br>
+    Numero cta: 12343987, Alias: Juanin, Banco: Estado
+  </li>
+  <li class="list-group-item">
+    <input type="radio" name="contact" value="Joel Taiba">
+    <strong>Joel Taiba</strong><br>
+    Numero cta: 14343987, Alias: Jowell, Banco: Estado
+  </li>
+</ul>
+
+    <button id="sendMoneyBtn" class="btn btn-primary mt-3">Enviar dinero</button>
+    <div id="message" class="mt-3"></div>
+    <a href="menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
+  </div>
+</body>
+<!--Scrip bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--Jquery script-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--script js-->
+<script src="assets/js/sendmoney.js"></script>
+</html>
