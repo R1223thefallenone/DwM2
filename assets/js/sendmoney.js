@@ -46,7 +46,7 @@ if (bank === null) return;
     }
 
     if (!/^\d{8,22}$/.test(rut)) {
-      alert("Rut inválido");
+      alert("¡Ingresa un numero de cuenta valido!");
       return;
     }
 
