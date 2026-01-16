@@ -13,7 +13,7 @@ $(document).ready(function () {
     localStorage.setItem("balance", 60000);
   }
 
-  /*BUSCAR CONTACTOS*/
+  // Buscar contacto
   $searchInput.on("keyup", function () {
     const search = $(this).val().toLowerCase();
 
@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
   });
 
-  /*AGREGAR NUEVO CONTACTO*/
+  // Agregar nuevo contacto
   $form.on("submit", function (event) {
     event.preventDefault();
 
@@ -62,14 +62,14 @@ if (bank === null) return;
     $searchInput.val("");
   });
 
-  /*SELECCIONAR CONTACTO*/
+  // Seleccionar contacto
   $(document).on("change", 'input[name="contact"]', function () {
     $(".contact-item").removeClass("active");
     $(this).closest("li").addClass("active");
     $sendMoneyBtn.fadeIn();
   });
 
-  /*ENVIAR DINERO*/
+  // Enviar dinero
   $sendMoneyBtn.on("click", function () {
 
     const $selected = $('input[name="contact"]:checked');
